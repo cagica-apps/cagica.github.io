@@ -20,6 +20,53 @@ body {
   background-size: cover;
 }
 
+.profile.split {
+    /background: url(../images/bg.jpg);
+    background-size: cover;
+    padding-left: 50px;
+}
+
+.profile .left {
+    color: #e7e5e8;
+}
+
+.profile .right {
+    color: #666;
+    text-align: center;
+}
+
+.profile .wrapper {
+    margin-top: 25%;
+    text-align: center;
+    font-weight: 100;
+}
+
+.split {
+    height: 100%;
+}
+
+.split h1 {
+    text-align: center;
+}
+
+.split .left {
+    box-sizing: border-box;
+    width: 40%;
+    float: left;
+    height: 100%;
+}
+
+.split .right.light {
+    background: hsla(0,0%,100%,.9);
+}
+
+.split .right {
+    box-sizing: border-box;
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+
 .bg-gray {
   background: #ececec; 
 }
