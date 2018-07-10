@@ -5,18 +5,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHome, faUser, faPaperPlane, faBriefcase, faCameraRetro, faFileAlt} from '@fortawesome/free-solid-svg-icons';
 import { Route, Link } from 'react-router-dom';
+import ProfileComponent from './Profile';
 
 const Home = () => (
   <div className="bg-full-image">
-    <div className="title">
-      <h1>Hello,</h1>
-      <h2>my name is Sergio Cagica</h2>
-    </div>
-  </div>
-);
-
-const Profile = () => (
-  <div className="bg-gray">
     <div className="title">
       <h1>Hello,</h1>
       <h2>my name is Sergio Cagica</h2>
@@ -52,11 +44,11 @@ class AppComponent extends React.Component {
             <Link to="/"><FontAwesomeIcon icon={faCameraRetro} color="#ddd" size="2x"/></Link>
           </li>
           <li>
-            <Link to="/"><FontAwesomeIcon icon={faPaperPlane} color="#ddd" size="2x"/></Link>
+            <Link to="/contacts"><FontAwesomeIcon icon={faPaperPlane} color="#ddd" size="2x"/></Link>
           </li>
         </ul>
         <Route path="/" exact component={Home}/>
-        <Route path="/profile" component={Profile}/>
+        <Route path="/profile" component={ProfileComponent}/>
         <Route path="/cv" component={CV}/>
         <Route path="/contacts" render={() => (<div> This is the airport route </div>)}/>
       </div>
