@@ -13,11 +13,48 @@ body {
   height: 100%;
 }
 
+nav {
+	position: absolute;
+	bottom: 60px;
+}
+
+.disabled {
+	display: none !important;
+}
+
+.pager {
+	display: flex;
+}
+
 .bg-full-image {
   background-image: url("../images/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.centered-container {
+  height: 100vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-pdf__Document {
+    max-width: 100%;
+    box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2)
+}
+
+.react-pdf__Page__canvas {
+	border-radius: 10px;
+}
+
+.profile img.headshot {
+    width: 25%;
+    opacity: .90;
+    border-radius: 50%;
+    border: 2px solid hsla(0,0%,93%,.42);
+    display: block;
 }
 
 .profile.split {
@@ -37,16 +74,15 @@ body {
 
 .profile .wrapper {
     margin-top: 25%;
-    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: left;
     font-weight: 100;
+
 }
 
 .split {
     height: 100%;
-}
-
-.split h1 {
-    text-align: center;
 }
 
 .split .left {
