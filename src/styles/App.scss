@@ -1,0 +1,158 @@
+html,
+body {
+  height: 100%;
+  background-color: #fafafa;
+}
+
+.App {
+  h2 {
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  h5 {
+    font-size: 1.1em;
+    font-weight: 300;
+    margin: 5px 0px 0px 0px;
+  }
+
+  p {
+    font-size: 1em;
+    font-style: normal;
+  }
+
+  .centered-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .App-header {
+    background-color: #81808B;
+    padding: 10px 20px;
+
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      color: white;
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .spacer {
+        flex: 1 1 auto;
+      }
+
+      .right-col {
+        display: flex;
+        align-items: center;
+
+        a {
+          color: white;
+          padding: 0;
+          font-size: 1rem;
+        }
+
+        button {
+          min-width: 0px;
+        }
+
+        svg {
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+
+  .App-body {
+
+    a {
+      text-decoration: none;
+    }
+
+    .App-work {
+      max-width: 1140px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .description {
+        padding: 0.5em;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card-img {
+        height: 175px;
+      }
+    }
+
+    .btn-download {
+      margin-top: 25px;
+      color: #347DBF;
+      background-color: white;
+
+      & :first-child {
+        margin-right: 10px;
+      }
+    }
+
+    .pdf-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      button[class*="disabled"] {
+        color: transparent;
+      }
+
+      .btn-previous,
+      .btn-next {
+        color: #81808B;
+        margin-top: 300px;
+        margin: 300px 20px 0px 20px;
+      }
+
+      .pdf-viewer * {
+        box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+        border-radius: 5px;
+        margin: 25px 0px;
+      }
+    }
+  }
+}
+
+.Nav {
+  margin-right: 10px;
+}
+
+.Profile {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .card {
+    padding: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1 solid rgba(0, 0, 0, .125);
+    border-radius: .3rem;
+    box-shadow: 0 2px 3px rgba(35, 51, 64, .15);
+    z-index: 1040;
+    max-width: 58.33333%;
+  }
+}
